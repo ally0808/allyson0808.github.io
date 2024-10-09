@@ -13,7 +13,7 @@ function initMap() {
     directionsRenderer.setMap(map);
 
     const image =
-        "./zoo.png";  //CREAMOS LA CONSTANTE CON LA RUTA DE LA IMAGEN
+        "./cat.png";  //CREAMOS LA CONSTANTE CON LA RUTA DE LA IMAGEN
     new google.maps.Marker({
         position: myLatLng,
         map,
