@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF 8">
+    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+    <title>API GENERICA</title>
+</head>
+
+<style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+      }
+  
+      th, td {
+        border: 1px solid #000000;
+        padding: 8px;
+        text-align: left;
+      }
+  
+      th {
+        background-color: #e9bdf1;
+        color: #333;
+        font-weight: bold;
+      }
+  
+      tr:nth-child(even) {
+        background-color: #e9bdf1;
+      }
+  
+      tr:hover {
+        background-color: #f8c5e4;
+      }
+</style>
+<style>
+      /*lista ordenda comentarios*/
+      ol {
+        list-style-type: decimal;
+        margin: 20px;
+        padding: 0;
+      }
+  
+      li {
+        background-color: #cb8df0;
+        border: 1px solid #cb8df0;
+        margin-bottom: 15px;
+        padding: 10px;
+        border-radius: 5px;
+        font-family: Arial, sans-serif;
+      }
+  
+      li:hover {
+        background-color: #a25de2;
+      }
+    </style>
+<style>
+    /* Contenedor general de fotos */
+#appphotos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin: 20px;
+    padding: 10px;
+  }
+  
+  /* Estilo para cada div que contendrá una foto */
+  .photo-div {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    width: calc(33.33% - 20px); /* Tres columnas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+  
+  .photo-div h3 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 8px;
+  }
+  
+  .photo-div img {
+    max-width: 100%;
+    border-radius: 4px;
+  }
+  
+  .photo-div:hover {
+    transform: scale(1.05);
+  }
+</style>
+
+
+<body>
+<h1>SOLICITUDES GET DE UNA API REST</h1>
+<!--Seccion de usuarios-->
+<h1>Usuarios</h1>
+<div id="app"></div>
+<!--seccion de tabla de usuarios-->
+<div id="apptable"></div>
+<h1>Posts</h1>
+<!--Seccion de publicaciones de usuarios-->
+<div id="appposts"></div>
+<h1>Photos</h1>
+<!--seccion de fotos de usuario-->
+<div id="appphotos"></div>
+<!--seccion de comentarios de usuario-->
+<h1>Comentarios</h1>
+<div id="appcomments"></div>
+
+<!--scripts externos para obtener las apis-->
+<script src="apiusers.js" type="module"></script>
+<script src="apiuserstable.js "type="module"></script>
+<script src="apiposts.js" type="module"></script>
+<script src="apiphotos.js" type="module"></script>
+<script src="apicomments.js" type="module"></script>
+
+
+</body>
+</html>
